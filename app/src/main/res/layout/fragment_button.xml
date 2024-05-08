@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context=".Fragments.ButtonFragment">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.35"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEnable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/status_enabled"
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvEnabled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/status_enabled"
+            app:layout_constraintEnd_toStartOf="@id/guideline"
+            app:layout_constraintTop_toTopOf="@id/btnEnable"
+            app:layout_constraintBottom_toBottomOf="@id/btnEnable" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDisable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/status_disabled"
+            android:enabled="false"
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnEnable"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/tvDisabled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/status_disabled"
+            app:layout_constraintEnd_toStartOf="@id/guideline"
+            app:layout_constraintTop_toTopOf="@id/btnDisable"
+            app:layout_constraintBottom_toBottomOf="@id/btnDisable" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnUnelevateEnable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/status_unelevated_enabled"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnDisable"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton" />
+
+        <TextView
+            android:id="@+id/tvUnelevateEnable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/status_unelevated_enabled"
+            app:layout_constraintEnd_toStartOf="@id/guideline"
+            app:layout_constraintTop_toTopOf="@id/btnUnelevateEnable"
+            app:layout_constraintBottom_toBottomOf="@id/btnUnelevateEnable" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnOutline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/status_outline_enable"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnUnelevateEnable"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+        <TextView
+            android:id="@+id/tvOutline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/status_outline_enable"
+            app:layout_constraintEnd_toStartOf="@id/guideline"
+            app:layout_constraintTop_toTopOf="@id/btnOutline"
+            app:layout_constraintBottom_toBottomOf="@id/btnOutline" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTextEnable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/status_text_enable"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnOutline"
+            style="@style/Widget.MaterialComponents.Button.TextButton" />
+
+        <TextView
+            android:id="@+id/tvTextEnable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/status_text_enable"
+            app:layout_constraintEnd_toStartOf="@id/guideline"
+            app:layout_constraintTop_toTopOf="@id/btnTextEnable"
+            app:layout_constraintBottom_toBottomOf="@id/btnTextEnable" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnIconEnable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/status_icon_enable"
+            android:layout_marginTop="16dp"
+            app:icon="@drawable/ic_zoom_in"
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnTextEnable" />
+
+        <TextView
+            android:id="@+id/tvIconEnable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/status_icon_enable"
+            app:layout_constraintEnd_toStartOf="@id/guideline"
+            app:layout_constraintTop_toTopOf="@id/btnIconEnable"
+            app:layout_constraintBottom_toBottomOf="@id/btnIconEnable" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnIconTextEnable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/status_icon_text_enable"
+            android:layout_marginTop="16dp"
+            app:icon="@drawable/ic_zoom_in"
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnIconEnable"
+            style="@style/Widget.MaterialComponents.Button.TextButton" />
+
+        <TextView
+            android:id="@+id/tvIconTextEnable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/status_icon_text_enable"
+            app:layout_constraintEnd_toStartOf="@id/guideline"
+            app:layout_constraintTop_toTopOf="@id/btnIconTextEnable"
+            app:layout_constraintBottom_toBottomOf="@id/btnIconTextEnable" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCustom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/status_custom"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/holo_green_dark"
+            app:icon="@drawable/ic_add"
+            app:iconTint="@android:color/holo_green_dark"
+            app:rippleColor="@android:color/holo_blue_bright"
+            app:cornerRadius="16dp"
+            app:strokeColor="@android:color/holo_blue_bright"
+            app:strokeWidth="2dp"
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnIconTextEnable"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+        <TextView
+            android:id="@+id/tvCustom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/status_custom"
+            app:layout_constraintEnd_toStartOf="@id/guideline"
+            app:layout_constraintTop_toTopOf="@id/btnCustom"
+            app:layout_constraintBottom_toBottomOf="@id/btnCustom" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
