@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         mAdapter.add(AlertDialogFragment.getmInstance());
         mAdapter.add(AppBarFragment.getmInstance());
         mAdapter.add(PickerFragment.getmInstance());
+        mAdapter.add(AlertDialogFragment.getmInstance());
         mAdapter.reverse();
     }
 

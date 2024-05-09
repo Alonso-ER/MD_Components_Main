@@ -1,0 +1,31 @@
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/common_padding_default"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        tools:context="com.alain.cursos.alonso.fragments.NavigationDrawerFragment">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnModal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/navigation_drawer_modal" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/navigation_drawer_bottom" />
+
+    </LinearLayout>
+</layout>

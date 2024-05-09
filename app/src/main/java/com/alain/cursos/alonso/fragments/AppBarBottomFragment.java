@@ -90,7 +90,6 @@ public class AppBarBottomFragment extends DialogFragment {
                         .toBuilder()
                         .setTopEdge(topEdge)
                         .build());
-
     }
 
     @Override
