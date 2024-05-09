@@ -21,6 +21,7 @@ import com.alain.cursos.alonso.fragments.FloatingActionButtonFragment;
 import com.alain.cursos.alonso.fragments.MenuFragment;
 import com.alain.cursos.alonso.fragments.NavigationDrawerFragment;
 import com.alain.cursos.alonso.fragments.PickerFragment;
+import com.alain.cursos.alonso.fragments.SheetsBottomFragment;
 import com.alain.cursos.alonso.fragments.SnackBarFragment;
 import com.alain.cursos.alonso.fragments.TextFieldFragment;
 
@@ -75,6 +76,9 @@ public class CommonUtils {
                 break;
             case NavigationDrawerFragment.TAG:
                 fragment = new NavigationDrawerFragment();
+                break;
+            case SheetsBottomFragment.TAG:
+                fragment = new SheetsBottomFragment();
                 break;
         }
 

@@ -15,6 +15,7 @@ import com.alain.cursos.alonso.fragments.CheckboxFragment;
 import com.alain.cursos.alonso.fragments.FloatingActionButtonFragment;
 import com.alain.cursos.alonso.fragments.MenuFragment;
 import com.alain.cursos.alonso.fragments.PickerFragment;
+import com.alain.cursos.alonso.fragments.SheetsBottomFragment;
 import com.alain.cursos.alonso.fragments.SnackBarFragment;
 import com.alain.cursos.alonso.fragments.TextFieldFragment;
 import com.alain.cursos.alonso.utils.Component;
@@ -54,6 +55,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         mAdapter.add(AppBarFragment.getmInstance());
         mAdapter.add(PickerFragment.getmInstance());
         mAdapter.add(AlertDialogFragment.getmInstance());
+        mAdapter.add(SheetsBottomFragment.getmInstance());
         mAdapter.reverse();
     }
 

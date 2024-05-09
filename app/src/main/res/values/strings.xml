@@ -202,4 +202,16 @@
     <string name="dialog_negative">Negative Button</string>
     <string name="navigation_drawer_modal">Modal Drawer</string>
     <string name="navigation_drawer_bottom">Bottom Drawer</string>
+    <string name="sheets_bottom_standard">Standard Bottom</string>
+    <string name="sheets_bottom_modal">Modal Bottom</string>
+    <string name="sheet_bottom_standard_title">Cursos Android ANT</string>
+    <string name="sheet_bottom_standard_type">Courses Online</string>
+    <string name="ib_description">Descripción del ImageButtom. Es para cambiarle el tamaño</string>
+    <string name="sheet_bottom_standard_link">Website</string>
+    <string name="sheet_bottom_standard_call">Call</string>
+    <string name="sheet_bottom_standard_save">Save</string>
+    <string name="sheet_bottom_standard_timeline">2 days ago</string>
+    <string name="sheet_bottom_standard_address">123 Main Street, Los Angeles</string>
+    <string name="sheet_bottom_standard_schedule">Closed</string>
+    <string name="sheet_bottom_standard_make_question">Ask Something</string>
 </resources>

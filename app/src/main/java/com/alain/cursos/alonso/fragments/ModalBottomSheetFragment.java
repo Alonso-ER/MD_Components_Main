@@ -20,6 +20,7 @@ import com.mdcomponents.cursos.alain.databinding.FragmentModalBottomSheetBinding
 public class ModalBottomSheetFragment extends BottomSheetDialogFragment
     implements NavigationView.OnNavigationItemSelectedListener {
     FragmentModalBottomSheetBinding binding;
+
     public static final String TAG = "Modal Bottom Sheet";
 
     public ModalBottomSheetFragment() {
