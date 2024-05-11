@@ -11,10 +11,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.alain.cursos.alonso.R;
+import com.alain.cursos.alonso.databinding.FragmentNavigationDrawerBinding;
 import com.alain.cursos.alonso.utils.Component;
 import com.alain.cursos.alonso.utils.Constants;
-import com.mdcomponents.cursos.alain.R;
-import com.mdcomponents.cursos.alain.databinding.FragmentNavigationDrawerBinding;
 
 public class NavigationDrawerFragment extends Fragment {
     FragmentNavigationDrawerBinding binding;

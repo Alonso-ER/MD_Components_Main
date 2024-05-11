@@ -6,6 +6,7 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.alain.cursos.alonso.adapters.ComponentAdapter;
+import com.alain.cursos.alonso.databinding.ActivityMainBinding;
 import com.alain.cursos.alonso.fragments.AlertDialogFragment;
 import com.alain.cursos.alonso.fragments.AppBarFragment;
 import com.alain.cursos.alonso.fragments.BottomNavigationBarFragment;
@@ -21,7 +22,6 @@ import com.alain.cursos.alonso.fragments.TextFieldFragment;
 import com.alain.cursos.alonso.utils.Component;
 import com.alain.cursos.alonso.utils.Constants;
 import com.alain.cursos.alonso.utils.OnClickListener;
-import com.mdcomponents.cursos.alain.databinding.ActivityMainBinding;
 
 import java.util.ArrayList;
 

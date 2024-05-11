@@ -10,13 +10,13 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.alain.cursos.alonso.R;
+import com.alain.cursos.alonso.databinding.FragmentCardBinding;
 import com.alain.cursos.alonso.utils.Component;
 import com.alain.cursos.alonso.utils.Constants;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.RequestOptions;
-import com.mdcomponents.cursos.alain.R;
-import com.mdcomponents.cursos.alain.databinding.FragmentCardBinding;
 
 
 public class CardFragment extends Fragment {

@@ -9,11 +9,11 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
+import com.alain.cursos.alonso.R;
+import com.alain.cursos.alonso.databinding.FragmentBottomNavigationBarBinding;
 import com.alain.cursos.alonso.utils.Component;
 import com.alain.cursos.alonso.utils.Constants;
 import com.google.android.material.badge.BadgeDrawable;
-import com.mdcomponents.cursos.alain.R;
-import com.mdcomponents.cursos.alain.databinding.FragmentBottomNavigationBarBinding;
 
 public class BottomNavigationBarFragment extends Fragment {
 

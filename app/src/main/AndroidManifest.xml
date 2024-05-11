@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.alain.cursos.alonso">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET"/>
 
@@ -14,12 +13,15 @@
         <activity
             android:name=".alonso.StaticActivity"
             android:label="@string/title_activity_static"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true" />
         <activity
             android:name=".alonso.ScrollActivity"
             android:label="@string/title_activity_scroll"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".alonso.MainActivity">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true" />
+        <activity android:name=".alonso.MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

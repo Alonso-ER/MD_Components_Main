@@ -10,8 +10,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
 
-import com.mdcomponents.cursos.alain.R;
-import com.mdcomponents.cursos.alain.databinding.FragmentAppBarTopBinding;
+import com.alain.cursos.alonso.R;
+import com.alain.cursos.alonso.databinding.FragmentAppBarTopBinding;
 
 public class AppBarTopFragment extends DialogFragment {
 

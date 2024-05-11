@@ -15,9 +15,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.alain.cursos.alonso.R;
+import com.alain.cursos.alonso.databinding.FragmentModalNavigationDrawerBinding;
 import com.google.android.material.navigation.NavigationView;
-import com.mdcomponents.cursos.alain.R;
-import com.mdcomponents.cursos.alain.databinding.FragmentModalNavigationDrawerBinding;
 
 public class ModalNavigationDrawerFragment extends DialogFragment
         implements NavigationView.OnNavigationItemSelectedListener{

@@ -12,12 +12,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.alain.cursos.alonso.R;
+import com.alain.cursos.alonso.databinding.BottomSheetBinding;
+import com.alain.cursos.alonso.databinding.FragmentSheetsBottomBinding;
 import com.alain.cursos.alonso.utils.Component;
 import com.alain.cursos.alonso.utils.Constants;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
-import com.mdcomponents.cursos.alain.R;
-import com.mdcomponents.cursos.alain.databinding.BottomSheetBinding;
-import com.mdcomponents.cursos.alain.databinding.FragmentSheetsBottomBinding;
 
 public class SheetsBottomFragment extends Fragment {
 

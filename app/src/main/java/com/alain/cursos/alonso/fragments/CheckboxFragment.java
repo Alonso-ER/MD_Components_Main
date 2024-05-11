@@ -11,10 +11,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.alain.cursos.alonso.R;
+import com.alain.cursos.alonso.databinding.FragmentCheckboxBinding;
 import com.alain.cursos.alonso.utils.Component;
 import com.alain.cursos.alonso.utils.Constants;
-import com.mdcomponents.cursos.alain.R;
-import com.mdcomponents.cursos.alain.databinding.FragmentCheckboxBinding;
 
 public class CheckboxFragment extends Fragment {
 

@@ -1,5 +1,7 @@
 package com.alain.cursos.alonso.utils;
 
+import android.annotation.SuppressLint;
+
 import com.google.android.material.bottomappbar.BottomAppBarTopEdgeTreatment;
 import com.google.android.material.shape.ShapePath;
 
@@ -13,6 +15,16 @@ public class BottomAppBarCutCornersTopEdge extends BottomAppBarTopEdgeTreatment 
         super(fabMargin, roundedCornerRadius, cradleVerticalOffset);
         this.fabMargin = fabMargin;
         this.cradleVerticalOffset = cradleVerticalOffset;
+    }
+
+    @SuppressLint("RestrictedApi")
+    public float getFabDiameter() {
+        return 0f;
+    }
+
+    @SuppressLint("RestrictedApi")
+    public float getHorizontalOffset() {
+        return 0f;
     }
 
     @Override

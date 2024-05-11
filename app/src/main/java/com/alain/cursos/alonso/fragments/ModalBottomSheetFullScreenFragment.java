@@ -10,15 +10,11 @@ import androidx.core.content.ContextCompat;
 
 import android.view.View;
 
+import com.alain.cursos.alonso.R;
+import com.alain.cursos.alonso.databinding.FragmentModalBottomSheetFullScreenBinding;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
-import com.mdcomponents.cursos.alain.R;
-import com.mdcomponents.cursos.alain.databinding.FragmentModalBottomSheetBinding;
-import com.mdcomponents.cursos.alain.databinding.FragmentModalBottomSheetFullScreenBinding;
-
-import java.util.Objects;
-
 
 public class ModalBottomSheetFullScreenFragment extends BottomSheetDialogFragment {
 

@@ -10,11 +10,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.alain.cursos.alonso.R;
+import com.alain.cursos.alonso.databinding.FragmentAppBarBottomBinding;
+import com.alain.cursos.alonso.databinding.FragmentBottomNavigationBarBinding;
 import com.alain.cursos.alonso.utils.BottomAppBarCutCornersTopEdge;
 import com.google.android.material.shape.MaterialShapeDrawable;
-import com.mdcomponents.cursos.alain.R;
-import com.mdcomponents.cursos.alain.databinding.FragmentAppBarBottomBinding;
-import com.mdcomponents.cursos.alain.databinding.FragmentBottomNavigationBarBinding;
 
 public class BottomNavigationDrawerFragment extends DialogFragment {
     FragmentBottomNavigationBarBinding binding;

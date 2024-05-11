@@ -10,8 +10,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
 
-import com.mdcomponents.cursos.alain.R;
-import com.mdcomponents.cursos.alain.databinding.FragmentFullScreenDialogBinding;
+import com.alain.cursos.alonso.R;
+import com.alain.cursos.alonso.databinding.FragmentFullScreenDialogBinding;
 
 public class FullScreenDialogFragment extends DialogFragment {
     FragmentFullScreenDialogBinding binding;

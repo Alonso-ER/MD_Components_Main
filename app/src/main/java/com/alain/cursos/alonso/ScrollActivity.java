@@ -8,12 +8,10 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.alain.cursos.alonso.databinding.ActivityScrollBinding;
 import com.alain.cursos.alonso.utils.CommonUtils;
 import com.alain.cursos.alonso.utils.Constants;
 import com.google.android.material.snackbar.Snackbar;
-import com.mdcomponents.cursos.alain.R;
-import com.mdcomponents.cursos.alain.databinding.ActivityScrollBinding;
-
 
 public class ScrollActivity extends AppCompatActivity {
 

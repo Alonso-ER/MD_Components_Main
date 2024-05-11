@@ -104,7 +104,7 @@
             android:drawableTop="@drawable/ic_save"
             android:layout_marginTop="@dimen/common_padding_default"
             app:drawableTint="@color/colorAccent"
-            app:layout_constraintStart_toEndtOf="@id/btnLink"
+            app:layout_constraintStart_toEndOf="@id/btnLink"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/containerHeader"/>
 
@@ -126,7 +126,7 @@
             android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
             android:layout_margin="@dimen/common_padding_default"
             android:drawablePadding="@dimen/common_padding_default"
-            app:drawableTintColor="@color/colorAccent"
+            android:tint="@color/colorAccent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/vDividerActions"
@@ -141,7 +141,7 @@
             android:layout_margin="@dimen/common_padding_default"
             android:drawablePadding="@dimen/common_padding_default"
             app:drawableStartCompat="@drawable/ic_location_on"
-            app:drawableTintColor="@color/colorAccent"
+            android:tint="@color/colorAccent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvChronology" />
@@ -154,7 +154,7 @@
             android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
             android:layout_margin="@dimen/common_padding_default"
             android:drawablePadding="@dimen/common_padding_default"
-            app:drawableTintColor="@color/colorAccent"
+            android:tint="@color/colorAccent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvAddress"

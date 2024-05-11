@@ -10,12 +10,12 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
 
+import com.alain.cursos.alonso.R;
+import com.alain.cursos.alonso.databinding.FragmentAppBarBottomBinding;
 import com.alain.cursos.alonso.utils.BottomAppBarCutCornersTopEdge;
 import com.google.android.material.bottomappbar.BottomAppBar;
 import com.google.android.material.shape.MaterialShapeDrawable;
 import com.google.android.material.snackbar.Snackbar;
-import com.mdcomponents.cursos.alain.R;
-import com.mdcomponents.cursos.alain.databinding.FragmentAppBarBottomBinding;
 
 
 public class AppBarBottomFragment extends DialogFragment {

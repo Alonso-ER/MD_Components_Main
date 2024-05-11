@@ -6,14 +6,16 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.alain.cursos.alonso.databinding.ItemComponentBinding;
 import com.alain.cursos.alonso.utils.Component;
 import com.alain.cursos.alonso.utils.OnClickListener;
-import com.mdcomponents.cursos.alain.databinding.ItemComponentBinding;
 
 import java.util.Collections;
 import java.util.List;
 
 public class ComponentAdapter extends RecyclerView.Adapter<ComponentAdapter.ViewHolder> {
+
+    ItemComponentBinding binding;
 
 
     private final List<Component> mComponents;
@@ -27,7 +29,7 @@ public class ComponentAdapter extends RecyclerView.Adapter<ComponentAdapter.View
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        ItemComponentBinding binding = ItemComponentBinding.inflate(LayoutInflater.from(parent.getContext()), parent, false);
+        binding = ItemComponentBinding.inflate(LayoutInflater.from(parent.getContext()), parent, false);
         return new ViewHolder(binding);
     }
 
@@ -58,7 +60,7 @@ public class ComponentAdapter extends RecyclerView.Adapter<ComponentAdapter.View
         notifyDataSetChanged();
     }
 
-    class ViewHolder extends RecyclerView.ViewHolder {
+    static class ViewHolder extends RecyclerView.ViewHolder {
 
         ItemComponentBinding binding;
 

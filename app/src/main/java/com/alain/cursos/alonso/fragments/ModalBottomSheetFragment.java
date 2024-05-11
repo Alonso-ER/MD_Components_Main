@@ -11,11 +11,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.example.mdcomponents.Fragments.FullScreenDialogFragment;
+import com.alain.cursos.alonso.R;
+import com.alain.cursos.alonso.databinding.FragmentModalBottomSheetBinding;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 import com.google.android.material.navigation.NavigationView;
-import com.mdcomponents.cursos.alain.R;
-import com.mdcomponents.cursos.alain.databinding.FragmentModalBottomSheetBinding;
 
 public class ModalBottomSheetFragment extends BottomSheetDialogFragment
     implements NavigationView.OnNavigationItemSelectedListener {
