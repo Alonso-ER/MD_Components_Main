@@ -5,6 +5,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -59,12 +60,14 @@ public class SheetsBottomFragment extends Fragment {
             public void onStateChanged(@NonNull View bottomSheet, int newState) {
                 if (newState == BottomSheetBehavior.STATE_EXPANDED) {
                     mIsExpanded = true;
-                } else if (newState == BottomSheetBehavior.STATE_EXPANDED) {
-                    binding.btnStandard.setText("Collapse");
-                } else if (newState == BottomSheetBehavior.STATE_HIDDEN) {
-                    binding.btnStandard.setText("Show Bottom Sheet");
-                } else if (newState == BottomSheetBehavior.STATE_HALF_EXPANDED) {
-                    binding.btnStandard.setText("Half Expanded");
+                    bottomSheetBinding.btnResize.setImageDrawable(
+                            ContextCompat.getDrawable(requireContext(),
+                                    R.drawable.ic_expand_more));
+                } else if (newState == BottomSheetBehavior.STATE_COLLAPSED) {
+                    mIsExpanded = false;
+                    bottomSheetBinding.btnResize.setImageDrawable(
+                            ContextCompat.getDrawable(requireContext(),
+                                    R.drawable.ic_expand_less));
                 }
             }
 
@@ -85,6 +88,11 @@ public class SheetsBottomFragment extends Fragment {
             } else {
                 nBottomSheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
             }
+        });
+
+        binding.btnModal.setOnClickListener(v -> {
+            ModalBottomSheetFullScreenFragment fragment = new ModalBottomSheetFullScreenFragment();
+            fragment.show(getParentFragmentManager().beginTransaction(), ModalBottomSheetFragment.TAG);
         });
 
         bottomSheetBinding.btnResize.setOnClickListener(v -> {

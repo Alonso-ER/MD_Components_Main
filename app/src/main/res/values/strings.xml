@@ -214,4 +214,5 @@
     <string name="sheet_bottom_standard_address">123 Main Street, Los Angeles</string>
     <string name="sheet_bottom_standard_schedule">Closed</string>
     <string name="sheet_bottom_standard_make_question">Ask Something</string>
+    <string name="hint_username">Username</string>
 </resources>
