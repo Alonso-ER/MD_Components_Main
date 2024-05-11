@@ -19,6 +19,7 @@ import com.alain.cursos.alonso.fragments.CardFragment;
 import com.alain.cursos.alonso.fragments.CheckboxFragment;
 import com.alain.cursos.alonso.fragments.FloatingActionButtonFragment;
 import com.alain.cursos.alonso.fragments.MenuFragment;
+import com.alain.cursos.alonso.fragments.MotionFragment;
 import com.alain.cursos.alonso.fragments.NavigationDrawerFragment;
 import com.alain.cursos.alonso.fragments.PickerFragment;
 import com.alain.cursos.alonso.fragments.SheetsBottomFragment;
@@ -79,6 +80,9 @@ public class CommonUtils {
                 break;
             case SheetsBottomFragment.TAG:
                 fragment = new SheetsBottomFragment();
+                break;
+            case MotionFragment.TAG:
+                fragment = new MotionFragment();
                 break;
         }
 
