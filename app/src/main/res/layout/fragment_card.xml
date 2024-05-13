@@ -66,13 +66,15 @@
                     android:id="@+id/tvTitle"
                     android:layout_width="@dimen/common_padding_none"
                     android:layout_height="wrap_content"
-                    android:text="@string/card_title_demo"
-                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
                     android:layout_marginStart="@dimen/common_padding_default"
                     android:layout_marginEnd="@dimen/common_padding_default"
+                    android:letterSpacing="0.0"
+                    android:maxLines="1"
+                    android:text="@string/card_title_demo"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                    app:layout_constraintEnd_toStartOf="@id/cardImgSmall"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintEnd_toStartOf="@id/cardImgSmall" />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/tvDesc"
