@@ -17,7 +17,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/viewEnd"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/motion_view_end_height"
             android:layout_gravity="bottom"
             android:background="@android:color/white"
             android:visibility="gone">
@@ -57,10 +57,37 @@
                     style="@style/TextAppearance.MaterialComponents.Headline6"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <include layout="@layout/fragment_button"
+            <FrameLayout
+                android:id="@+id/viewOut"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@id/containerBar" />
+                android:visibility="visible"
+                app:layout_constraintTop_toBottomOf="@id/containerBar">
+
+                <include layout="@layout/fragment_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/viewIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/common_padding_default"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@id/containerBar">
+
+                <include layout="@layout/fragment_checkbox" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/motion_button_back"
+                    android:layout_marginTop="@dimen/common_padding_bottom_scroll"/>
+            </LinearLayout>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

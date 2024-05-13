@@ -215,4 +215,5 @@
     <string name="sheet_bottom_standard_schedule">Closed</string>
     <string name="sheet_bottom_standard_make_question">Ask Something</string>
     <string name="hint_username">Username</string>
+    <string name="motion_button_back">Back</string>
 </resources>

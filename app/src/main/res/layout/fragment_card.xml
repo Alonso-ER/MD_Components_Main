@@ -172,9 +172,9 @@
                     android:text="@string/card_subtitle_demo"
                     android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
                     app:firstBaselineToTopHeight="@dimen/card_baseline_subtitle"
+                    app:layout_constraintEnd_toEndOf="@id/tvTitleLarge"
                     app:layout_constraintStart_toStartOf="@id/tvTitleLarge"
-                    app:layout_constraintTop_toBottomOf="@+id/divider"
-                    app:layout_constraintEnd_toEndOf="@id/tvTitleLarge" />
+                    app:layout_constraintTop_toBottomOf="@+id/divider" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnFirstLarge"
@@ -225,9 +225,9 @@
                     android:id="@+id/chipFourth"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/card_chip_demo"
                     android:layout_marginStart="@dimen/common_padding_min"
                     android:checkable="true"
+                    android:text="@string/card_chip_demo"
                     app:checkedIcon="@drawable/ic_favorite"
                     app:closeIconEnabled="true"
                     app:layout_constraintBottom_toBottomOf="@+id/chipFirst"

@@ -8,6 +8,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 
+import android.transition.TransitionManager;
+import android.view.Gravity;
 import android.view.View;
 
 import com.alain.cursos.alonso.R;
@@ -15,6 +17,8 @@ import com.alain.cursos.alonso.databinding.FragmentModalBottomSheetFullScreenBin
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
+import com.google.android.material.transition.MaterialFadeThrough;
+import com.google.android.material.transition.SlideDistanceProvider;
 
 public class ModalBottomSheetFullScreenFragment extends BottomSheetDialogFragment {
 
@@ -33,7 +37,6 @@ public class ModalBottomSheetFullScreenFragment extends BottomSheetDialogFragmen
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
         BottomSheetDialog bottomSheetDialog = (BottomSheetDialog) super.onCreateDialog(savedInstanceState);
         binding = FragmentModalBottomSheetFullScreenBinding.inflate(getLayoutInflater());
-        bottomSheetDialog.setContentView(binding.getRoot());
 
         binding.vExtraSpace.setMinimumHeight((Resources.getSystem().getDisplayMetrics().heightPixels) / 4);
 
@@ -42,6 +45,12 @@ public class ModalBottomSheetFullScreenFragment extends BottomSheetDialogFragmen
         nBottomSheetBehavior.addBottomSheetCallback(new BottomSheetBehavior.BottomSheetCallback() {
             @Override
             public void onStateChanged(@NonNull View bottomSheet, int newState) {
+
+                MaterialFadeThrough fadeThrough = new MaterialFadeThrough();
+                fadeThrough.setSecondaryAnimatorProvider(new SlideDistanceProvider(Gravity.TOP));
+                fadeThrough.setDuration(250L);
+
+                TransitionManager.beginDelayedTransition(binding.containerBar);
 
                 int statusBarColor = ContextCompat.getColor(requireActivity(), R.color.colorPrimaryDark);
 
@@ -64,7 +73,7 @@ public class ModalBottomSheetFullScreenFragment extends BottomSheetDialogFragmen
 
         binding.ibCancel.setOnClickListener(v -> nBottomSheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN));
 
-
+        bottomSheetDialog.setContentView(binding.getRoot());
         return bottomSheetDialog;
     }
 
